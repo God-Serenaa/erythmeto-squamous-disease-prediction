@@ -1,0 +1,1 @@
+# erythmeto-squamous-disease-prediction

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!----======== CSS ======== -->
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style2.css') }}" />
+
+    <!----===== Iconscout CSS ===== -->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+
+    <title>Input page</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>Patient Form</header>
+
+      <form action="localhost:5000/result" method="POST">
+        <div class="form first">
+          <div class="details personal">
+            <span class="title">Personal Details</span>
+
+            <div class="fields">
+              <div class="input-field">
+                <label>Full Name</label>
+                <input
+                  type="text"
+                  name="Name"
+                  placeholder="Enter your name"
+                  required />
+              </div>
+
+              <div class="input-field">
+                <label>Mobile Number</label>
+                <input
+                  type="number"
+                  name="mobile"
+                  placeholder="Enter mobile number"
+                  required />
+              </div>
+
+              <div class="input-field">
+                <label>Gender</label>
+                <select required>
+                  <option disabled selected>Select gender</option>
+                  <option name="gender" value="m" id="Male">Male</option>
+                  <option name="gender" value="f" id="Female">Female</option>
+                  <option name="gender" value="o" id="Others">Others</option>
+                </select>
+              </div>
+
+              <div class="input-field">
+                <label>Blood Type </label>
+                <input
+                  type="text"
+                  name="blood"
+                  placeholder="Enter your blood type" />
+              </div>
+
+              <div class="input-field">
+                <label>Patient ID</label>
+                <input type="number" name="ID" placeholder="Enter your ID" />
+              </div>
+            </div>
+          </div>
+
+          <div class="Symptoms1">
+            <span class="title">Symptoms</span>
+
+            <div class="fields_symp1">
+              <div class="input-field">
+                <label>Erythema</label>
+                <input type="number" name="Erythema" required />
+              </div>
+              <div class="input-field">
+                <label>Scaling</label>
+                <input type="number" name="Scaling" required />
+              </div>
+              <div class="input-field">
+                <label>Definite borders</label>
+                <input type="text" name="Definite_borders" required />
+              </div>
+              <div class="input-field">
+                <label>Itching</label>
+                <input type="number" name="Itching" required />
+              </div>
+
+              <div class="input-field">
+                <label>Koebner phenomenon</label>
+                <input type="number" name="Koebner_phenomenon" required />
+              </div>
+              <div class="input-field">
+                <label>Polygonal papules</label>
+                <input type="number" name="Polygonal papules" required />
+              </div>
+              <div class="input-field">
+                <label>Follicular papules</label>
+                <input type="number" name="Follicular_papules" required />
+              </div>
+              <div class="input-field">
+                <label>Oral mucosal involvement</label>
+                <input type="number" name="Oral_mucosal_involvement" required />
+              </div>
+              <div class="input-field">
+                <label>Knee and elbow involvement</label>
+                <input
+                  type="number"
+                  name="Knee_and_elbow_involvement"
+                  required />
+              </div>
+              <div class="input-field">
+                <label>Scalp involvement</label>
+                <input type="number" name="Scalp_involvement" required />
+              </div>
+              <div class="input-field">
+                <label>Family history, (0 or 1)</label>
+                <input type="text" name="Family_history_(0 or 1)" required />
+              </div>
+              <div class="input-field">
+                <label>Eosinophils in the infiltrate</label>
+                <input
+                  type="number"
+                  name="Eosinophils_in_the_infiltrate"
+                  required />
+              </div>
+              <div class="input-field">
+                <label>PNL infiltrate</label>
+                <input type="number" name="PNL_infiltrate" required />
+              </div>
+              <div class="input-field">
+                <label>Fibrosis of the papillary dermis</label>
+                <input
+                  type="number"
+                  name="Fibrosis_of_the_papillary_dermis"
+                  required />
+              </div>
+              <div class="input-field">
+                <label>Exocytosis</label>
+                <input type="number" name="Exocytosis" required />
+              </div>
+              <div class="input-field">
+                <label>Acanthosis</label>
+                <input type="number" name="Acanthosis" required />
+              </div>
+              <div class="input-field">
+                <label>Hyperkeratosis</label>
+                <input type="number" name="Hyperkeratosis" required />
+              </div>
+              <div class="input-field">
+                <label>Parakeratosis</label>
+                <input type="text" name="Parakeratosis" required />
+              </div>
+              <div class="input-field">
+                <label>Clubbing of the rete ridges</label>
+                <input
+                  type="number"
+                  name="Clubbing_of_the_rete_ridges"
+                  required />
+              </div>
+              <div class="input-field">
+                <label>Elongation of the rete ridges</label>
+                <input
+                  type="number"
+                  name="Elongation_of_the_rete_ridges"
+                  required />
+              </div>
+              <div class="input-field">
+                <label>Thinning of the suprapapillary epidermis</label>
+                <input
+                  type="number"
+                  name="Thinning_of_the_suprapapillary_epidermis"
+                  required />
+              </div>
+              <div class="input-field">
+                <label>Spongiform pustule</label>
+                <input type="number" name="Spongiform_pustule" required />
+              </div>
+              <div class="input-field">
+                <label>Munro microabcess</label>
+                <input type="number" name="Munro_microabcess" required />
+              </div>
+              <div class="input-field">
+                <label>Focal hypergranulosis</label>
+                <input type="number" name="Focal_hypergranulosis" required />
+              </div>
+              <div class="input-field">
+                <label>Disappearance of the granular layer</label>
+                <input
+                  type="number"
+                  name="Disappearance_of_the_granular_layer"
+                  required />
+              </div>
+              <div class="input-field">
+                <label>Spongiosis</label>
+                <input type="number" name="Spongiosis" required />
+              </div>
+              <div class="input-field">
+                <label>Follicular horn plug</label>
+                <input type="number" name="Follicular_horn_plug" required />
+              </div>
+              <div class="input-field">
+                <label>Inflammatory monoluclear infiltrate</label>
+                <input
+                  type="number"
+                  name="Inflammatory_monoluclear_infiltrate"
+                  required />
+              </div>
+              <div class="input-field">
+                <label>Age (linear)</label>
+                <input type="number" name="Age" required />
+              </div>
+            </div>
+
+            <!--<button class="nextBtn">
+                        <span class="btnText" type="Submit">Submit</span>
+                    </button>-->
+            <input class="btnTxt" type="submit" />
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
